@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>北海道教育大学旭川校 陸上競技部 公式サイト</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- ▼▼▼ スライドショー用のCSSファイルを追加 ▼▼▼ -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- ▲▲▲ スライドショー用のCSSファイルを追加 ▲▲▲ -->
+
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        /* スライドショーの左右の矢印と下の点の「色」を青に設定します */
+        .swiper-button-next,
+        .swiper-button-prev {
+            color: #ffffff; /* 矢印の色 */
+        }
+        .swiper-pagination-bullet-active {
+            background: #ffffff; /* アクティブな点の色 */
+        }
+        /* スライドショーの高さを設定します */
+        .swiper {
+            width: 100%;
+            height: 80vh; /* 画面の高さの80%に設定。変更可能 */
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- ▼▼▼ ヘッダーとナビゲーション（変更なし） ▼▼▼ -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="text-xl font-bold text-blue-800">
+                <a href="#">HUE Asahikawa</a>
+            </div>
+            <div class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition duration-300">部紹介</a>
+                <a href="#members" class="text-gray-600 hover:text-blue-600 transition duration-300">部員紹介</a>
+                <a href="#news" class="text-gray-600 hover:text-blue-600 transition duration-300">活動報告</a>
+                <a href="#blog" class="text-gray-600 hover:text-blue-600 transition duration-300">ブログ</a>
+                <a href="#recruit" class="text-gray-600 hover:text-blue-600 transition duration-300">新入部員へ</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition duration-300">お問い合わせ</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden flex items-center">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-3">
+             <a href="#about" class="block py-2 text-gray-600 hover:text-blue-600">部紹介</a>
+            <a href="#members" class="block py-2 text-gray-600 hover:text-blue-600">部員紹介</a>
+            <a href="#news" class="block py-2 text-gray-600 hover:text-blue-600">活動報告</a>
+            <a href="#blog" class="block py-2 text-gray-600 hover:text-blue-600">ブログ</a>
+            <a href="#recruit" class="block py-2 text-gray-600 hover:text-blue-600">新入部員へ</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-blue-600">お問い合わせ</a>
+        </div>
+    </header>
+    <!-- ▲▲▲ ヘッダーとナビゲーション（変更なし） ▲▲▲ -->
+
+    <main>
+        <!-- ▼▼▼ ヒーローセクション → スライドショーに変更 ▼▼▼ -->
+        <section class="relative">
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    
+                    <!-- ▼スライド1 ここから▼ -->
+                    <!-- この swiper-slide のブロックをコピーして下に貼り付けると、スライドを追加できます -->
+                    <div class="swiper-slide relative">
+                        <!-- スライド1の背景画像。 src=" " の中のURLを変更してください。 -->
+                        <img src="C:\Users\Owner\OneDrive\デスクトップ\公式HP用\写真\hata_ushiro.jpg.JPEG" class="w-full h-full object-cover">
+                        <!-- スライド1の上の文字。文字やボタンはスライドごとに変えることもできます。 -->
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center p-4">
+                            <h1 class="text-4xl md:text-6xl font-bold mb-4">限界へ挑戦、未来を掴む。</h1>
+                            <p class="text-lg md:text-xl mb-8">北海道教育大学旭川校 陸上競技部</p>
+                            <a href="#about" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">私たちの活動を見る</a>
+                        </div>
+                    </div>
+                    <!-- ▲スライド1 ここまで▲ -->
+
+                    <!-- ▼スライド2 ここから▼ -->
+                    <div class="swiper-slide relative">
+                        <!-- スライド2の背景画像。 src=" " の中のURLを変更してください。 -->
+                        <img src="C:\Users\Owner\OneDrive\デスクトップ\公式HP用\写真\women_happy.jpg.JPEG" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center p-4">
+                            <h1 class="text-4xl md:text-6xl font-bold mb-4">最高の仲間と、最高の舞台へ。</h1>
+                            <p class="text-lg md:text-xl mb-8">新入部員、いつでも募集中です！</p>
+                            <a href="#recruit" class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition duration-300">新入部員の方へ</a>
+                        </div>
+                    </div>
+                    <!-- ▲スライド2 ここまで▲ -->
+
+                    <!-- ▼スライド3 ここから▼ -->
+                    <div class="swiper-slide relative">
+                        <!-- スライド3の背景画像。 src=" " の中のURLを変更してください。 -->
+                        <img src="C:\Users\Owner\OneDrive\デスクトップ\公式HP用\写真\Ground_aki.jpg.JPEG" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white text-center p-4">
+                            <h1 class="text-4xl md:text-6xl font-bold mb-4">地域と共に、未来へ走る。</h1>
+                            <p class="text-lg md:text-xl mb-8">社会貢献活動にも力を入れています。</p>
+                            <a href="#news" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-full transition duration-300">活動報告を見る</a>
+                        </div>
+                    </div>
+                    <!-- ▲スライド3 ここまで▲ -->
+
+                </div>
+                <!-- スライドショーの左右の矢印 -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- スライドショーの下の点 -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </section>
+        <!-- ▲▲▲ ヒーローセクション → スライドショーに変更 ▲▲▲ -->
+
+        <!-- ▼▼▼ 部紹介 ▼▼▼ -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">部紹介 <span class="text-blue-600">About Us</span></h2>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <!-- 部の集合写真などを設定します。 src=" " の中を変更してください。 -->
+                        <img src="C:\Users\Owner\OneDrive\デスクトップ\公式HP用\写真\202505_hokkaidoIC_Allmember.jpg.JPEG" alt="チーム写真" class="rounded-lg shadow-xl" onerror="this.onerror=null;this.src='https://placehold.co/600x400';">
+                    </div>
+                    <div class="text-left">
+                        <h3 class="text-2xl font-bold mb-4">主将挨拶</h3>
+                        <!-- ここの文章を編集すると、主将挨拶の内容が変わります。 -->
+                        <p class="mb-6">
+                            北海道教育大学旭川校陸上競技部のホームページへようこそ。私たちは「個々の目標達成」と「チームとしての成長」を両立させることを目指し、日々練習に励んでいます。互いに高め合い、支え合う最高の仲間と共に、あなたも大学生活を充実させませんか？競技場でお会いできることを楽しみにしています。
+                        </p>
+                        <h3 class="text-2xl font-bold mb-4">活動理念</h3>
+                        <!-- ここの文章を編集すると、活動理念の内容が変わります。 -->
+                        <p>
+                            私たちは、陸上競技を通じて、心身の鍛錬はもちろん、社会に貢献できる人間形成を目指します。旭川の地域社会との連携を大切にし、スポーツの力で地域を盛り上げる活動にも積極的に参加しています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ▲▲▲ 部紹介 ▲▲▲ -->
+
+        <!-- ▼▼▼ 部員紹介 ▼▼▼ -->
+        <section id="members" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">部員紹介 <span class="text-blue-600">Members</span></h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+                    
+                    <!-- ▼部員カード ここから▼ -->
+                    <!-- このブロックをコピーして下に貼り付けると、新しい部員を追加できます。 -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                        <!-- 部員の写真。 src=" " の中を変更します。 -->
+                        <img src="https://placehold.co/150x150/A5B4FC/1E3A8A?text=部員A" alt="部員A" class="w-32 h-32 rounded-full mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/150x150';">
+                        <!-- 部員の名前 -->
+                        <h3 class="text-xl font-bold">教育 太郎</h3>
+                        <!-- 学年 / 種目 -->
+                        <p class="text-gray-500">4年 / 短距離</p>
+                        <!-- 自己紹介や目標など -->
+                        <p class="mt-2 text-sm italic">"自己ベスト更新！"</p>
+                    </div>
+                    <!-- ▲部員カード ここまで▲ -->
+
+                    <!-- ▼部員カード ここから▼ -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                        <img src="https://placehold.co/150x150/A5B4FC/1E3A8A?text=部員B" alt="部員B" class="w-32 h-32 rounded-full mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/150x150';">
+                        <h3 class="text-xl font-bold">旭川 花子</h3>
+                        <p class="text-gray-500">3年 / 長距離</p>
+                        <p class="mt-2 text-sm italic">"駅伝で区間賞！"</p>
+                    </div>
+                    <!-- ▲部員カード ここまで▲ -->
+
+                    <!-- ▼部員カード ここから▼ -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                        <img src="https://placehold.co/150x150/A5B4FC/1E3A8A?text=部員C" alt="部員C" class="w-32 h-32 rounded-full mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/150x150';">
+                        <h3 class="text-xl font-bold">北海 次郎</h3>
+                        <p class="text-gray-500">2年 / 跳躍</p>
+                        <p class="mt-2 text-sm italic">"全国大会出場！"</p>
+                    </div>
+                    <!-- ▲部員カード ここまで▲ -->
+
+                    <!-- ▼部員カード ここから▼ -->
+                    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+                        <img src="https://placehold.co/150x150/A5B4FC/1E3A8A?text=部員D" alt="部員D" class="w-32 h-32 rounded-full mx-auto mb-4" onerror="this.onerror=null;this.src='https://placehold.co/150x150';">
+                        <h3 class="text-xl font-bold">道産 愛</h3>
+                        <p class="text-gray-500">1年 / 投擲</p>
+                        <p class="mt-2 text-sm italic">"先輩方に追いつく！"</p>
+                    </div>
+                    <!-- ▲部員カード ここまで▲ -->
+
+                </div>
+            </div>
+        </section>
+        <!-- ▲▲▲ 部員紹介 ▲▲▲ -->
+
+        <!-- ▼▼▼ 活動報告・競技結果 ▼▼▼ -->
+        <section id="news" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">活動報告・競技結果 <span class="text-blue-600">News & Results</span></h2>
+                <div class="max-w-4xl mx-auto">
+                    
+                    <!-- ▼ニュースアイテム ここから▼ -->
+                    <!-- このブロックをコピーして下に貼り付けると、新しいニュースを追加できます。新しいものを上に追加していくのがおすすめです。 -->
+                    <div class="border-l-4 border-blue-500 pl-6 mb-8">
+                        <!-- 日付 -->
+                        <p class="text-gray-500 text-sm">2025.09.28</p>
+                        <!-- タイトル -->
+                        <h3 class="text-xl font-bold">【結果報告】第XX回 北海道学生陸上競技選手権大会</h3>
+                        <!-- 内容 -->
+                        <p class="mt-2">男子100mで教育太郎が優勝、女子やり投げで道産愛が3位入賞を果たしました！応援ありがとうございました。</p>
+                    </div>
+                    <!-- ▲ニュースアイテム ここまで▲ -->
+
+                    <!-- ▼ニュースアイテム ここから▼ -->
+                    <div class="border-l-4 border-blue-500 pl-6 mb-8">
+                        <p class="text-gray-500 text-sm">2025.08.15</p>
+                        <h3 class="text-xl font-bold">【社会貢献】旭川市小学生陸上教室を開催しました</h3>
+                        <p class="mt-2">地域の小学生を対象とした陸上教室を開催し、多くの子どもたちと交流しました。未来のアスリートたちに夢を与えることができ、部員にとっても貴重な経験となりました。</p>
+                    </div>
+                    <!-- ▲ニュースアイテム ここまで▲ -->
+
+                    <!-- ▼ニュースアイテム ここから▼ -->
+                    <div class="border-l-4 border-blue-500 pl-6 mb-8">
+                        <p class="text-gray-500 text-sm">2025.07.20</p>
+                        <h3 class="text-xl font-bold">【イベント】夏合宿を実施しました</h3>
+                        <p class="mt-2">〇〇にて夏合宿を行い、チームの結束力を高めました。厳しい練習を乗り越え、心身ともに大きく成長できました。</p>
+                    </div>
+                    <!-- ▲ニュースアイテム ここまで▲ -->
+
+                </div>
+            </div>
+        </section>
+        <!-- ▲▲▲ 活動報告・競技結果 ▲▲▲ -->
+
+        <!-- ▼▼▼ ブログ ▼▼▼ -->
+        <section id="blog" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">部員ブログ <span class="text-blue-600">Member's Blog</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- ▼ブログカード ここから▼ -->
+                    <!-- このブロックをコピーして隣や下に貼り付けると、新しいブログ記事を追加できます。 -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <!-- ブログのアイキャッチ画像。 src=" " の中を変更します。 -->
+                        <img src="https://placehold.co/400x250/DBEAFE/1E40AF?text=Blog+Image" alt="ブログ画像" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x250';">
+                        <div class="p-6">
+                            <!-- 日付 | 執筆者名 -->
+                            <p class="text-sm text-gray-500">2025.09.30 | 3年 旭川 花子</p>
+                            <!-- 記事タイトル -->
+                            <h3 class="font-bold text-lg mt-2 mb-2">長距離ブロックの練習風景</h3>
+                            <!-- 記事の概要 -->
+                            <p class="text-gray-700 text-sm">今日は秋の駅伝シーズンに向けて、ペース走を中心とした練習を行いました。チーム全体の...</p>
+                            <!-- 「続きを読む」のリンク先。今は # になっていますが、将来的に記事ページを作ったらそのURLを入れます。 -->
+                            <a href="#" class="text-blue-600 hover:underline mt-4 inline-block">続きを読む &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- ▲ブログカード ここまで▲ -->
+
+                    <!-- ▼ブログカード ここから▼ -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/400x250/DBEAFE/1E40AF?text=Blog+Image" alt="ブログ画像" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x250';">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500">2025.09.25 | 2年 北海 次郎</p>
+                            <h3 class="font-bold text-lg mt-2 mb-2">跳躍ドリルとウェイトトレーニング</h3>
+                            <p class="text-gray-700 text-sm">より高く、より遠くへ跳ぶために。僕が普段行っている補強トレーニングの一部を紹介します...</p>
+                            <a href="#" class="text-blue-600 hover:underline mt-4 inline-block">続きを読む &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- ▲ブログカード ここまで▲ -->
+
+                    <!-- ▼ブログカード ここから▼ -->
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <img src="https://placehold.co/400x250/DBEAFE/1E40AF?text=Blog+Image" alt="ブログ画像" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/400x250';">
+                        <div class="p-6">
+                            <p class="text-sm text-gray-500">2025.09.20 | 4年 教育 太郎</p>
+                            <h3 class="font-bold text-lg mt-2 mb-2">大学最後のシーズンを迎えて</h3>
+                            <p class="text-gray-700 text-sm">陸上競技部で過ごした4年間は、僕にとってかけがえのない財産です。後輩たちへ伝えたいこと...</p>
+                            <a href="#" class="text-blue-600 hover:underline mt-4 inline-block">続きを読む &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- ▲ブログカード ここまで▲ -->
+
+                </div>
+            </div>
+        </section>
+        <!-- ▲▲▲ ブログ ▲▲▲ -->
+
+        <!-- ▼▼▼ 新入部員へ ▼▼▼ -->
+        <!-- Q&Aの文章を自由に変更してください。 -->
+        <section id="recruit" class="py-20 bg-blue-50">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4">新入部員の皆さんへ</h2>
+                <p class="text-lg text-gray-700 mb-8">私たちと一緒に、最高の大学生活を送りませんか？</p>
+                <div class="max-w-3xl mx-auto text-left grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl mb-2 text-blue-700">Q. 初心者でも大丈夫ですか？</h3>
+                        <p>A. もちろんです！多くの部員が大学から陸上を始めています。専門のコーチや先輩が基礎から丁寧に指導するので、安心して挑戦してください。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl mb-2 text-blue-700">Q. 練習の雰囲気は？</h3>
+                        <p>A. やるときは集中し、オフの時は和気あいあいと、メリハリのある雰囲気です。学年や専門種目に関係なく、部員全員の仲が良いのが自慢です。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl mb-2 text-blue-700">Q. 学業との両立は可能？</h3>
+                        <p>A. 可能です。部員のほとんどが教員を目指しており、学業を最優先に考えています。試験期間中の練習は調整するなど、柔軟に対応しています。</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md">
+                        <h3 class="font-bold text-xl mb-2 text-blue-700">Q. 見学や体験はできますか？</h3>
+                        <p>A. いつでも大歓迎です！練習日に直接グラウンドに来ていただくか、下記のお問い合わせ先にご連絡ください。お待ちしています！</p>
+                    </div>
+                </div>
+                <a href="#contact" class="mt-12 inline-block bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-8 rounded-full transition duration-300">練習見学に申し込む</a>
+            </div>
+        </section>
+        <!-- ▲▲▲ 新入部員へ ▲▲▲ -->
+
+        <!-- ▼▼▼ お問い合わせ & アクセス ▼▼▼ -->
+        <section id="contact" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">お問い合わせ & アクセス</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">連絡先</h3>
+                        <!-- メールアドレスを部のものに変更してください。 -->
+                        <p class="mb-2"><strong>Email:</strong> hue.asahikawa.tf@example.com</p>
+                        <p class="mb-4">ご質問、練習見学・体験入部の希望など、お気軽にご連絡ください。</p>
+                        <h3 class="text-2xl font-bold mb-4">SNS</h3>
+                        <div class="flex space-x-4">
+                            <!-- # の部分に、実際のSNSのURLを入れてください。 -->
+                            <a href="#" class="text-blue-500 hover:text-blue-700">X (旧Twitter)</a>
+                            <a href="#" class="text-pink-500 hover:text-pink-700">Instagram</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4">練習場所</h3>
+                        <p class="mb-4">北海道教育大学旭川校 グラウンド<br>〒070-8621 北海道旭川市北門町9丁目</p>
+                        <div class="aspect-w-16 aspect-h-9">
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.593881665219!2d142.3486132157973!3d43.78363027911684!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b266113824515%3A0x471d413c63198f1!2z5YyX5rW36YGT5pWZ6IKy5aSn5a2m5rGg5p2x5qCh!5e0!3m2!1sja!2sjp!4v1664628945842!5m2!1sja!2sjp" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="rounded-lg"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ▲▲▲ お問い合わせ & アクセス ▲▲▲ -->
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2025 北海道教育大学旭川校 陸上競技部. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- ▼▼▼ フッターの前（</body>の直前）にスライドショーを動かすためのコードを追加 ▼▼▼ -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Swiperを初期化（動かすための設定） -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true, // 最後のスライドから最初のスライドにループします
+        autoplay: {
+          delay: 5000, // 5秒ごとに自動で切り替わります
+          disableOnInteraction: false, // ユーザーが操作しても自動再生を止めません
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true, // 下の点をクリックしてスライドを移動できるようにします
+        },
+        navigation: {
+          nextEl: ".swiper-button-next", // 「次へ」の矢印
+          prevEl: ".swiper-button-prev", // 「前へ」の矢印
+        },
+      });
+    </script>
+    
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        const navLinks = document.querySelectorAll('#mobile-menu a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
+
